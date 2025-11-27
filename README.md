@@ -177,6 +177,69 @@ http-server
 - Safari（最新版）
 - Edge（最新版）
 
+## Web公開時のアップロードファイル
+
+このプロジェクトをWebサーバーに公開する際は、以下のファイルとフォルダをアップロードしてください。
+
+### 必須ファイル・フォルダ
+
+```
+shanpoo/
+├── index.html          # トップページ（必須）
+├── concept.html        # コンセプトページ
+├── menu.html          # メニュー・料金ページ
+├── process.html       # こだわり・技術ページ
+├── access.html        # アクセス・店舗情報ページ
+├── css/
+│   └── style.css      # メインスタイルシート（必須）
+└── js/
+    └── main.js        # メインJavaScript（必須）
+```
+
+### アップロード不要なファイル
+
+以下のファイルは開発用のため、Webサーバーにはアップロードする必要はありません：
+
+- `README.md` - 開発用ドキュメント
+- `.gitignore` - Git管理用ファイル
+
+### アップロード時の注意点
+
+1. **フォルダ構造の保持**: `css/` と `js/` フォルダの構造をそのまま維持してください
+2. **ファイル名の大文字小文字**: サーバーによっては大文字小文字を区別するため、ファイル名は正確に一致させてください
+3. **ルートディレクトリ**: 通常は `index.html` をサーバーのルートディレクトリ（`public_html/` や `www/` など）に配置します
+4. **パーミッション**: ファイルの読み取り権限が適切に設定されているか確認してください（通常は644）
+
+### 一般的なアップロード方法
+
+#### FTP/SFTPを使用する場合
+1. FTPクライアント（FileZilla、Cyberduckなど）を使用
+2. サーバーのルートディレクトリに接続
+3. 上記の必須ファイルとフォルダをアップロード
+
+#### cPanelなどのコントロールパネルを使用する場合
+1. ファイルマネージャーを開く
+2. `public_html` または `www` フォルダに移動
+3. ファイルとフォルダをアップロード
+
+#### Gitを使用する場合
+```bash
+# サーバーにGitがインストールされている場合
+git clone <リポジトリURL>
+# または
+git pull
+```
+
+### 動作確認
+
+アップロード後、以下のURLで各ページが正しく表示されるか確認してください：
+
+- `https://yourdomain.com/` または `https://yourdomain.com/index.html`
+- `https://yourdomain.com/concept.html`
+- `https://yourdomain.com/menu.html`
+- `https://yourdomain.com/process.html`
+- `https://yourdomain.com/access.html`
+
 ## ライセンス
 
 © 2025 美容室シャンプー. All rights reserved.
