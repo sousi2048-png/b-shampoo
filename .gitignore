@@ -130,3 +130,20 @@ ENV/
 *.seed
 *.pid.lock
 
+# 画像の一時ファイル（必要に応じてコメントアウトを解除）
+# *.jpg.bak
+# *.png.bak
+# *.gif.bak
+
+# サーバー設定ファイル（必要に応じてコメントアウトを解除）
+# .htaccess
+# .htpasswd
+
+# ドキュメント生成ファイル
+docs/_build/
+site/
+
+# ローカル開発用ファイル
+.local/
+local/
+
