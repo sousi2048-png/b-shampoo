@@ -1,0 +1,132 @@
+# OS固有のファイル
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# エディタ・IDE固有のファイル
+# VS Code
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains IDEs (IntelliJ IDEA, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Atom
+.atom/
+
+# 一時ファイル・ログファイル
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.cache
+
+# 圧縮ファイル（必要に応じて）
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# 環境変数ファイル（機密情報を含む可能性があるため）
+.env
+.env.local
+.env.*.local
+
+# ローカル設定ファイル
+config.local.*
+settings.local.*
+
+# テストカバレッジ
+coverage/
+*.lcov
+.nyc_output/
+
+# ビルド成果物（将来的にビルドツールを使用する場合に備えて）
+dist/
+build/
+out/
+*.min.js
+*.min.css
+
+# パッケージマネージャー（将来的に使用する場合に備えて）
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python（将来的に使用する場合に備えて）
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# その他
+*.pid
+*.seed
+*.pid.lock
+
