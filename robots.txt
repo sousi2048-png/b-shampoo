@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: https://b-shampoo.com/sitemap.xml
+
+# クロール頻度の推奨（オプション）
+Crawl-delay: 1
+
